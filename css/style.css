@@ -1,0 +1,172 @@
+/**
+	Abel HZO Carrousel 2016
+	Tipo 1: Simgle carrousel with one image.
+	Tipo 2: Carrousel show two images and control next and prev.
+*/
+
+.carrouselOne {
+	width: 300px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.one {
+	display: table;
+	table-layout: fixed;
+	width: 300%;
+	position: relative;
+}
+
+.one > div {
+	display: table-cell;
+}
+
+.navigationOne {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+.navigationOne > a {
+	display: inline-block;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	color: #000;
+	text-decoration: none;
+	border: 1px solid rgb(0, 0, 0);
+	background: rgba(255, 255, 250, .8);
+	margin: 0 5px 0 5px;
+}
+
+.navigationOne > a:hover {
+	border: 1px solid rgb(0, 190, 0);
+}	
+
+.active {
+	background: rgba(0, 250, 0, .8) !important;
+}
+
+/*carrousel Two*/
+
+.carrouselTwo {
+	width: 600px;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.two {
+	display: table;
+	table-layout: fixed;
+	width: 300%;
+	position: relative;
+}
+
+.two > div {
+	display: table-cell;
+}
+
+.navigationTwo {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+.navigationTwo > a {
+	display: inline-block;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	color: #000;
+	text-decoration: none;
+	border: 1px solid rgb(0, 0, 0);
+	background: rgba(255, 255, 250, .8);
+	margin: 0 5px 0 5px;
+}
+
+.navigationTwo > a:hover {
+	border: 1px solid rgb(0, 190, 0);
+}
+
+.icon-left-open {
+	display: inline-block;
+	padding: 10px;
+	position: absolute;
+	top: 40%;
+	left: -60px;
+	font-size: 2.6rem;
+	color: rgba(250, 250, 250, .9);
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	transition: left .8s;
+}
+
+.icon-right-open {
+	display: inline-block;
+	padding: 10px;
+	position: absolute;
+	top: 40%;
+	right: -60px;
+	font-size: 2.6rem;
+	color: rgba(250, 250, 250, .9);
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	transition: right .8s;
+}
+
+.carrouselTwo:hover .icon-left-open {
+	left: 0px;
+}
+
+.carrouselTwo:hover .icon-right-open {
+	right: 0px;
+}
+
+.icon-left-open:hover {
+	color: rgba(0, 250, 10, .9);	
+}
+
+.icon-right-open:hover {
+	color: rgba(0, 250, 10, .9);	
+}
+
+/*Estilos de la pagina*/
+/*Styles of the page*/
+
+h1 {
+	text-align: center;
+}
+
+footer {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	font-family: cursive;
+}
+
+footer > div {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+footer > div:nth-child(1) {
+	text-align: right;
+	width: 45%;
+}
+
+footer > div > img {
+	width: 25px;
+}
